@@ -1,9 +1,28 @@
+
+
 .block-about {
     position: relative;
+    margin-bottom: 500px;
+}
+
+.back-left {
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+    height: 1000px;
+}
+
+.back-right {
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
 }
 
 .back-about {
-    width: 1912px;
+    width: 100%;
     height: 956px;
     
     position: absolute;
@@ -12,44 +31,89 @@
     left: 0;
 }
 
-.button-abt {
-    width: 220px;
-    height: 50px;
-
-    position: absolute;
-    margin-top: 260px;
-}
-
-.text-button {
-    font-size: 21px;
-}
-
 .dev-info {
     width: 990px;
     height: 600px;
-    margin-top: 95px;
+    margin-top: 190px;
 
     position: absolute;
     z-index: -1;
 }
 
-.back-abt {
+.about-form {
     width: 990px;
-    height: 956px;
-    background-color: rgb(252, 252, 252);
+    height: 600px;
+    margin-top: 160px;
+    padding: 0 50px;
+
+    position: absolute;
+}
+
+.info-abt-img {
+    width: 1000px;
+    height: 845px;
+    margin-top: 105px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.info-abt {
+    width: 1000px;
+    height: 820px;
+    margin-top: 150px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.b-a {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-abt {
+    margin-top: 500px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+
+.f-abt {
+    margin-left: 50px;
 }
 
 .nav-about {
     width: 300px;
     height: 150px;
-    background-color: rgb(17, 1, 1);
+    background-color: rgb(0, 0, 0);
 
     border-radius: 15px;
-    margin-top: 90px;
+    margin-top: 300px;
+    margin-left: 20px;
 }
 
 .link-abt {
     font-size: large;
     font-size: 17px;
     color:rgb(255, 255, 255);
+}
+
+.f-abt:hover {
+    background-color: #0056b3;
+  }
+
+@media (max-width: 990px) {
+    .fff {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-abt, .info-abt-img, .back-right, 
+    .about-form, .dev-info  {
+        display: none
+    }
 }
